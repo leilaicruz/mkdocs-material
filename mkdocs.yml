@@ -19,8 +19,8 @@
 # IN THE SOFTWARE.
 
 # Project information
-site_name: Material for MkDocs
-site_url: https://squidfunk.github.io/mkdocs-material/
+site_name: Material for MkDocs for Leila - testing :)
+site_url: https://leilaicruz.github.io/mkdocs-material/
 site_author: Martin Donath
 site_description: >-
   Create a branded static site from a set of Markdown files to host the
@@ -28,8 +28,8 @@ site_description: >-
   searchable, mobile-friendly, 40+ languages
 
 # Repository
-repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: leilaicruz/mkdocs-material
+repo_url: https://github.com/leilaicruz/mkdocs-material
 edit_uri: ""
 
 # Copyright
@@ -38,7 +38,9 @@ copyright: Copyright &copy; 2016 - 2020 Martin Donath
 # Configuration
 theme:
   name: null
-  custom_dir: material
+  custom_dir: C:\Users\linigodelacruz\Documents\mkdocs-material\material
+  features: 
+    - tabs
 
   # 404 page
   static_templates:
@@ -66,8 +68,14 @@ theme:
 # Plugins
 plugins:
   - search
-  - minify:
-      minify_html: true
+  - awesome-pages
+  # - minify
+  # - minify:
+  #     minify_html: true
+
+extra_javascript:
+  - javascripts/extra.js
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
 
 # Customization
 extra:
@@ -96,15 +104,15 @@ markdown_extensions:
   - markdown.extensions.meta
   - markdown.extensions.toc:
       permalink: true
-  - pymdownx.arithmatex
+  # - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
   # - pymdownx.highlight:
   #     linenums_style: pymdownx-inline
   - pymdownx.inlinehilite
